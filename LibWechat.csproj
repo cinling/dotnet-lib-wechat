@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>LibWechat</RootNamespace>
+    <PackageVersion>0.0.0-alpha</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Title>LibWechat</Title>
+    <Authors>Cinling</Authors>
+    <RootNamespace>LibWechat</RootNamespace>
+  </PropertyGroup>
+
+</Project>
