@@ -10,4 +10,8 @@
     <RootNamespace>LibWechat</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Cinling.Lib" Version="0.0.2" />
+  </ItemGroup>
+
 </Project>
