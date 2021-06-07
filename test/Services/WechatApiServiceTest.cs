@@ -1,5 +1,5 @@
 ﻿namespace LibWechatTest.Services {
-    public class WechatServiceTest {
+    public class WechatApiServiceTest {
         
     }
 }
