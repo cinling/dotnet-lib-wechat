@@ -1,4 +1,6 @@
-﻿using LibWechat.Structs.Cos;
+﻿
+using LibWechat.Options;
+using Microsoft.Extensions.Options;
 
 namespace LibWechat.Services {
 
@@ -6,46 +8,21 @@ namespace LibWechat.Services {
     /// 
     /// </summary>
     public interface IWechatApiService {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
-        public WechatApiServiceCo getCo();
 
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="co"></param>
-        /// <returns></returns>
-        public WechatApiServiceCo setCo(WechatApiServiceCo co);
     }
     
     /// <summary>
-    /// WeChat public account interface
+    /// 微信公众号服务
     /// </summary>
     public class WechatApiService : IWechatApiService {
-        /// <summary>
-        /// 
-        /// </summary>
-        private WechatApiServiceCo _co;
+        private readonly WechatApiOptions options;
 
         /// <summary>
         /// 
         /// </summary>
-        /// <returns></returns>
-        public WechatApiServiceCo getCo() {
-            return _co;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="co"></param>
-        /// <returns></returns>
-        public WechatApiServiceCo setCo(WechatApiServiceCo co) {
-            _co = co;
-            return _co;
+        /// <param name="options"></param>
+        public WechatApiService(IOptions<WechatApiOptions> options) {
+            this.options = options.Value;
         }
     }
 }
