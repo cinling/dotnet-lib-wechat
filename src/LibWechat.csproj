@@ -9,9 +9,13 @@
     <Authors>Cinling</Authors>
     <RootNamespace>LibWechat</RootNamespace>
   </PropertyGroup>
-
+  
   <ItemGroup>
-    <PackageReference Include="Cinling.Lib" Version="0.0.3-alpha.4" />
+    <ProjectReference Include="../../Lib/src/Lib.csproj" />
   </ItemGroup>
+
+<!--  <ItemGroup>-->
+<!--    <PackageReference Include="Cinling.Lib" Version="0.0.3-alpha.4" />-->
+<!--  </ItemGroup>-->
 
 </Project>

@@ -1,9 +1,9 @@
 ﻿
 using System;
+using Cinling.Lib.Interfaces;
 using LibWechat.Options;
 using LibWechat.Services;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace LibWechat.Extensions {
     
@@ -11,18 +11,22 @@ namespace LibWechat.Extensions {
     /// 
     /// </summary>
     public static class CinlingLibWechatCollectionExtensions {
-        
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceCollection AddWechatApiServiceScoped(this IServiceCollection services) {
-            return services;
-        }
+        public static IServiceCollection AddWechatApiServiceScoped(this IServiceCollection services) => AddWechatApiServiceScoped(services, new WechatApiOptions());
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="options"></param>
+        /// <returns></returns>
         public static IServiceCollection AddWechatApiServiceScoped(this IServiceCollection services, WechatApiOptions options) => AddWechatApiServiceScoped(services, originOptions => {
-            originOptions.Reset(options);
+            originOptions.CloneWith(options);
         });
 
         /// <summary>

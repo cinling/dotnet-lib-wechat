@@ -1,9 +1,11 @@
-﻿namespace LibWechat.Options {
+﻿using Cinling.Lib.Interfaces;
+
+namespace LibWechat.Options {
     
     /// <summary>
     /// 微信api配置
     /// </summary>
-    public class WechatApiOptions {
+    public class WechatApiOptions : ICloneWith {
         /// <summary>
         /// AppId
         /// </summary>
@@ -12,14 +14,5 @@
         /// AppSecret
         /// </summary>
         public string AppSecret { get; set; } = "";
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="options"></param>
-        public void Reset(WechatApiOptions options) {
-            AppId = options.AppId;
-            AppSecret = options.AppSecret;
-        }
     }
 }
