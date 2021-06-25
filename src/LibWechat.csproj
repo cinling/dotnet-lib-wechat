@@ -13,6 +13,9 @@
   <ItemGroup>
     <ProjectReference Include="../../Lib/src/Lib.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../LibCache/src/LibCache.csproj" />
+  </ItemGroup>
 
 <!--  <ItemGroup>-->
 <!--    <PackageReference Include="Cinling.Lib" Version="0.0.3-alpha.4" />-->

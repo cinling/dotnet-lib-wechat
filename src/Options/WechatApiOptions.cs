@@ -7,6 +7,10 @@ namespace LibWechat.Options {
     /// </summary>
     public class WechatApiOptions : ICloneWith {
         /// <summary>
+        /// 请求域名
+        /// </summary>
+        public string Domain { get; set; } = "https://api.weixin.qq.com";
+        /// <summary>
         /// AppId
         /// </summary>
         public string AppId { get; set; } = "";

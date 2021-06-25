@@ -15,6 +15,9 @@ namespace LibWechat.Services {
     /// 微信公众号服务
     /// </summary>
     public class WechatApiService : IWechatApiService {
+        /// <summary>
+        /// 
+        /// </summary>
         private readonly WechatApiOptions options;
 
         /// <summary>
