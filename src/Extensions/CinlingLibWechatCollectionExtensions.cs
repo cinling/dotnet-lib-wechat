@@ -1,11 +1,9 @@
 ﻿
 using System;
-using Cinling.Lib.Interfaces;
 using LibWechat.Options;
 using LibWechat.Services;
-using Microsoft.Extensions.DependencyInjection;
 
-namespace LibWechat.Extensions {
+namespace Microsoft.Extensions.DependencyInjection {
     
     /// <summary>
     /// 
