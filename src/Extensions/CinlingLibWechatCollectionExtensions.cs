@@ -1,5 +1,6 @@
 ﻿
 using System;
+using Cinling.Lib.Interfaces;
 using LibWechat.Options;
 using LibWechat.Services;
 

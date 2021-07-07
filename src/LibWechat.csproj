@@ -11,10 +11,10 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <ProjectReference Include="../../Lib/src/Lib.csproj" />
+    <ProjectReference Include="../../dotnet-lib/src/Lib.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="../../LibCache/src/LibCache.csproj" />
+    <ProjectReference Include="../../dotnet-lib-cache/src/LibCache.csproj" />
   </ItemGroup>
 
 <!--  <ItemGroup>-->
