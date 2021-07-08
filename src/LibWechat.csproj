@@ -16,6 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="../../dotnet-lib-cache/src/LibCache.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
+  </ItemGroup>
 
 <!--  <ItemGroup>-->
 <!--    <PackageReference Include="Cinling.Lib" Version="0.0.3-alpha.4" />-->

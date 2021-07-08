@@ -1,4 +1,6 @@
 ﻿
+using System.Net.Http;
+using LibWechat.Constants;
 using LibWechat.Options;
 using Microsoft.Extensions.Options;
 
@@ -18,14 +20,20 @@ namespace LibWechat.Services {
         /// <summary>
         /// 
         /// </summary>
-        private readonly WechatApiOptions options;
+        protected readonly WechatApiOptions options;
+        /// <summary>
+        /// 
+        /// </summary>
+        protected readonly IHttpClientFactory httpClientFactory;
 
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="options"></param>
-        public WechatApiService(IOptions<WechatApiOptions> options) {
-            this.options = options.Value;
+        /// <param name="iOptions"></param>
+        /// <param name="iHttpClientFactory"></param>
+        public WechatApiService(IOptions<WechatApiOptions> iOptions, IHttpClientFactory iHttpClientFactory) {
+            options = iOptions.Value;
+            httpClientFactory = iHttpClientFactory;
         }
     }
 }

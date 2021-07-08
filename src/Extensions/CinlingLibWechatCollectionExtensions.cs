@@ -36,6 +36,7 @@ namespace Microsoft.Extensions.DependencyInjection {
         /// <returns></returns>
         public static IServiceCollection AddWechatApiServiceScoped(this IServiceCollection services, Action<WechatApiOptions> optionsAction) {
             services.AddOptions();
+            services.AddHttpClient();
             services.AddOptions<WechatApiOptions>().Configure(optionsAction);
             services.AddScoped<IWechatApiService, WechatApiService>();
             return services;
