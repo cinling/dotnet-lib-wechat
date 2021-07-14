@@ -9,8 +9,20 @@ namespace LibWechat.Structs.Ios {
     /// </summary>
     [CanDictionaryClass(CanDictionary.Underscore)]
     public class CgiBinTokenIo : BaseIo {
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public string GrantType { get; set; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public string Appid { get; set; }
+        
+        /// <summary>
+        /// 
+        /// </summary>
         public string Secret { get; set; }
     }
 }
